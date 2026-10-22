@@ -6,7 +6,7 @@
 :root { color-scheme: light; --bg: #FCF1DC; --surface: #FFFCF5; --fg: #44372B; --muted: #756454; --accent: #526B46; --line: #E5DBC5; }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.8 "M PLUS Rounded 1c", "Hiragino Maru Gothic ProN", "Hiragino Sans", sans-serif; }
-main { max-width: 720px; margin: 0 auto; padding: 24px max(16px, env(safe-area-inset-left)) 48px; }
+main { max-width: 720px; margin: 0 auto; padding: 0 max(16px, env(safe-area-inset-left)) 48px; }
 article { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 8px 20px 20px; }
 h1 { font-size: 22px; font-weight: 800; line-height: 1.5; margin: 16px 0 8px; }
 h2 { font-size: 17px; margin: 24px 0 4px; padding-top: 16px; border-top: 1px solid var(--line); }
@@ -14,7 +14,7 @@ h3 { font-size: 15px; margin: 18px 0 2px; }
 p, li { margin: 4px 0; }
 ul, ol { padding-left: 1.4em; margin: 4px 0; }
 a { color: var(--accent); }
-header { display: flex; align-items: center; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; margin-bottom: 12px; }
+header { position: sticky; top: 0; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap; margin: 0 -2px 12px; padding: 10px 2px; background: var(--bg); border-bottom: 1px solid var(--line); }
 .brand { display: flex; align-items: center; gap: 8px; color: var(--fg); text-decoration: none; font-weight: 800; font-size: 16px; }
 .brand img { width: 32px; height: 32px; border-radius: 8px; }
 nav { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; }
